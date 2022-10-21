@@ -13,13 +13,6 @@
         android:theme="@style/Theme.WhatsAppClone"
         tools:targetApi="31">
         <activity
-            android:name=".CreatePostActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".ImageViewActivity"
             android:exported="false">
             <meta-data

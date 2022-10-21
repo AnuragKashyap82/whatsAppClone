@@ -1,10 +1,14 @@
-package kashyap.anurag.whatsappclone;
+package kashyap.anurag.whatsappclone.Adapter;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import kashyap.anurag.whatsappclone.ChatsFragment;
+import kashyap.anurag.whatsappclone.ContactsFragment;
+import kashyap.anurag.whatsappclone.GroupsFragment;
+import kashyap.anurag.whatsappclone.RequestFragment;
 
 public class TabsAccessorAdapter extends FragmentPagerAdapter {
 
@@ -18,18 +22,15 @@ public class TabsAccessorAdapter extends FragmentPagerAdapter {
 
         switch (position) {
             case 0:
-                FeedsFragment feedsFragment = new FeedsFragment();
-                return feedsFragment;
-            case 1:
                 ChatsFragment chatsFragment = new ChatsFragment();
                 return chatsFragment;
-            case 2:
+            case 1:
                 GroupsFragment groupsFragment = new GroupsFragment();
                 return groupsFragment;
-            case 3:
+            case 2:
                 ContactsFragment contactsFragment = new ContactsFragment();
                 return contactsFragment;
-            case 4:
+            case 3:
                 RequestFragment requestFragment = new RequestFragment();
                 return requestFragment;
             default:
@@ -39,7 +40,7 @@ public class TabsAccessorAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 5;
+        return 4;
     }
 
     @Nullable
@@ -47,15 +48,14 @@ public class TabsAccessorAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "Feeds";
-            case 1:
                 return "Chats";
-            case 2:
+            case 1:
                 return "Group";
-            case 3:
+            case 2:
                 return "Contact";
-            case 4:
+            case 3:
                 return "Request";
+
             default:
                 return null;
         }
