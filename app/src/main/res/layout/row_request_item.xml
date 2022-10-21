@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileIv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/colorPrimary"
+        android:src="@drawable/ic_person_black"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/profileIv"
+        android:layout_marginTop="15dp"
+        android:text="Anurag Kashyap"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/userStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/profileIv"
+        android:layout_below="@id/userName"
+        android:text="Statusklfngokoernhoiergrkmhmerlkjhm"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/profileIv"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/acceptRequestBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="#1BD915"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/cancelRequestBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="Cancel Request"
+            android:textAllCaps="false"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/declineRequestBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:background="@drawable/button_bg"
+            android:text="Decline"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

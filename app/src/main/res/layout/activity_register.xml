@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/edit_text_bg"
+            android:padding="4dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="60dp"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_phone_black"
+            android:drawableTint="@color/gray02"
+            android:drawablePadding="12dp"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/edit_text_bg"
+            android:padding="4dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/emailEt"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_password_black"
+            android:drawableTint="@color/gray02"
+            android:drawablePadding="12dp"
+            android:hint="Password"/>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_below="@id/passwordEt"
+            android:padding="12dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:text="SignUp"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/alreadyAccountTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="5dp"
+            android:padding="12dp"
+            android:text="Already have account? Login"
+            android:textColor="@color/colorSecondary"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
